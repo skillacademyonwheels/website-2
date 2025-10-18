@@ -1,9 +1,39 @@
+<!-- https://github.com/skillacademyonwheels/website-2.git -->
 <!doctype html>
 <html lang="en">
 
 <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
+        rel="stylesheet" />
+
+    <title>Nav Bar</title>
     <style>
-        .my-heading{
+        body {
+            font-family: "Roboto Slab", serif;
+        }
+
+        .navbar-brand {
+            font-family: "Baloo Tamma 2", cursive;
+        }
+
+         .mySlides {
+            margin: auto;
+            padding: 10px;
+            background-color: aquamarine;
+        }
+         .my-heading{
             padding: 2px;
             margin: auto;
             text-align: center;
@@ -21,62 +51,134 @@
        width: 150px;  
        height: 200px;   
     }
-
     </style>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
+
+    <!-- Responsive Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <!-- Brand -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="fas fa-code fa-lg text-warning"></i>
+                <span class="ms-2">CODINGAL</span>
+            </a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#social-media">Social Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://packetcode.github.io/web-development-crash-course/resume-mini-project/"
+                            target="_blank" rel="noopener">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <img class="mySlides" src="1.jpg" alt="Beach" style="height: 300px;">
+        <img class="mySlides" src="2.jpg" alt="Beach" style="height: 300px;">
+        <img class="mySlides" src="3.jpg" alt="Sand" style="height: 300px;">
+        <img class="mySlides" src="4.jpg" alt="Sand" style="height: 300px;">
+    </section>
+
     <div class="container-fluid bg-primary text-white">
         <h1 class="display-3 my-heading">Welcome to this Website</h1>
     </div>
-<div class="jumbotron jumbotron-fluid bg-dark py-5">
-    <div class="container">
-        <h1 class="display-4 text-white text-center">Fluid jumbotron</h1>
-        <p class="lead text-white text-center">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-    </div> 
-</div>
-<div class="container-fluid mycontainer py-5">
-    <h1 class="display-3 text-center mytext"><b>The Nature's Valley</b></h1>
-</div>
-
-<div class="container-fluid bg-secondary">
-    <div class="row">
-        <div class="col-8 py-5">
-            <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet urna nec enim
-                faucibus
-                auctor quis placerat erat.
-                Nullam non pretium magna. Fusce luctus id lectus vel sodales. Morbi in scelerisque dui. Proin at luctus metus,
-                quis
-                vulputate urna. Mauris porttitor ex ac enim tristique, ac viverra urna gravida.</p>
+    <div class="jumbotron jumbotron-fluid bg-dark py-5">
+        <div class="container">
+            <h1 class="display-4 text-white text-center">Fluid jumbotron</h1>
+            <p class="lead text-white text-center">This is a modified jumbotron that occupies the entire horizontal space of
+                its parent.</p>
         </div>
-        <div class="col-4 py-5 m-auto">
-            <img class="myimg" src="4.jpg" alt="">
-        </div>
-    </div> 
-
-    <div class="row">
-        <div class="col-4 py-5 m-auto">
-            <img class="myimg" src="4.jpg" alt="">
-            </div>
-        <div class="col-8 py-5 m-auto">
-            
-            <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet urna nec enim
-                faucibus
-                auctor quis placerat erat.
-                Nullam non pretium magna. Fusce luctus id lectus vel sodales. Morbi in scelerisque dui. Proin at luctus
-                metus,
-                quis
-                vulputate urna. Mauris porttitor ex ac enim tristique, ac viverra urna gravida.</p>
-            </div>
     </div>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    <div class="container-fluid mycontainer py-5">
+        <h1 class="display-3 text-center mytext"><b>The Nature's Valley</b></h1>
+    </div>
+    
+    <div class="container-fluid bg-secondary">
+        <div class="row">
+            <div class="col-8 py-5">
+                <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet urna nec
+                    enim
+                    faucibus
+                    auctor quis placerat erat.
+                    Nullam non pretium magna. Fusce luctus id lectus vel sodales. Morbi in scelerisque dui. Proin at luctus
+                    metus,
+                    quis
+                    vulputate urna. Mauris porttitor ex ac enim tristique, ac viverra urna gravida.</p>
+            </div>
+            <div class="col-4 py-5 m-auto">
+                <img class="myimg" src="4.jpg" alt="">
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-4 py-5 m-auto">
+                <img class="myimg" src="4.jpg" alt="">
+            </div>
+            <div class="col-8 py-5 m-auto">
+    
+                <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet urna nec
+                    enim
+                    faucibus
+                    auctor quis placerat erat.
+                    Nullam non pretium magna. Fusce luctus id lectus vel sodales. Morbi in scelerisque dui. Proin at luctus
+                    metus,
+                    quis
+                    vulputate urna. Mauris porttitor ex ac enim tristique, ac viverra urna gravida.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var myIndex = 0;
+        carousel()
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+
+    <!-- Example sections to test links -->
+    <!-- <section id="about" class="p-5 text-center">About section</section>
+    <section id="projects" class="p-5 text-center bg-light">Projects section</section>
+    <section id="social-media" class="p-5 text-center">Social Media section</section> -->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </body>
 

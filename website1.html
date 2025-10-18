@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        .my-heading{
+            padding: 2px;
+            margin: auto;
+            text-align: center;
+        }
+        .mycontainer{
+            background-image: url("2.jpg");
+            height: 50vh;
+        }
+       .mytext{
+            text-shadow: 3px 3px 3px greenyellow;
+       }
+
+       .myimg{
+        display: float;
+       width: 150px;  
+       height: 200px;   
+    }
+
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid bg-primary text-white">
+        <h1 class="display-3 my-heading">Welcome to this Website</h1>
+    </div>
+<div class="jumbotron jumbotron-fluid bg-dark py-5">
+    <div class="container">
+        <h1 class="display-4 text-white text-center">Fluid jumbotron</h1>
+        <p class="lead text-white text-center">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div> 
+</div>
+<div class="container-fluid mycontainer py-5">
+    <h1 class="display-3 text-center mytext"><b>The Nature's Valley</b></h1>
+</div>
+
+<div class="container-fluid bg-secondary">
+    <div class="row">
+        <div class="col-8 py-5">
+            <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet urna nec enim
+                faucibus
+                auctor quis placerat erat.
+                Nullam non pretium magna. Fusce luctus id lectus vel sodales. Morbi in scelerisque dui. Proin at luctus metus,
+                quis
+                vulputate urna. Mauris porttitor ex ac enim tristique, ac viverra urna gravida.</p>
+        </div>
+        <div class="col-4 py-5 m-auto">
+            <img class="myimg" src="4.jpg" alt="">
+        </div>
+    </div> 
+
+    <div class="row">
+        <div class="col-4 py-5 m-auto">
+            <img class="myimg" src="4.jpg" alt="">
+            </div>
+        <div class="col-8 py-5 m-auto">
+            
+            <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet urna nec enim
+                faucibus
+                auctor quis placerat erat.
+                Nullam non pretium magna. Fusce luctus id lectus vel sodales. Morbi in scelerisque dui. Proin at luctus
+                metus,
+                quis
+                vulputate urna. Mauris porttitor ex ac enim tristique, ac viverra urna gravida.</p>
+            </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
